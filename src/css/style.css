@@ -1,0 +1,103 @@
+@font-face {
+  font-family: 'GothamRoundedBold';
+  src: url("../fonts/gotham_rounded/GothamRoundedBold_21016.ttf"); }
+
+@font-face {
+  font-family: 'GothamRoundedLight';
+  src: url("../fonts/gotham_rounded/GothamRoundedLight_21020.ttf"); }
+
+@font-face {
+  font-family: 'GothamRoundedMedium';
+  src: url("../fonts/gotham_rounded/GothamRoundedMedium_21022.ttf"); }
+
+@font-face {
+  font-family: 'GothamRoundedLightItalic';
+  src: url("../fonts/gotham_rounded/GothamRounded-LightItalic.otf"); }
+
+@font-face {
+  font-family: 'GothamRoundedMediumItalic';
+  src: url("../fonts/gotham_rounded/GothamRounded-MediumItalic.otf"); }
+
+@font-face {
+  font-family: 'AdamCGPro';
+  src: url("../../fonts/ADAM.CG-PRO/ADAM.CG-PRO.otf"); }
+
+h1 {
+  font-size: 400%;
+  font-family: AdamCGPro, Helvetica, Verdana, sans-serif; }
+
+h2 {
+  font-size: 250%;
+  font-family: GothamRoundedMedium, Helvetica, Verdana, sans-serif; }
+
+h3 {
+  font-size: 200%;
+  font-family: GothamRoundedMedium, Helvetica, Verdana, sans-serif;
+  margin-bottom: 20px; }
+
+h4 {
+  font-size: 150%;
+  font-family: GothamRoundedMedium, Helvetica, Verdana, sans-serif; }
+
+h5 {
+  font-size: 125%;
+  font-family: GothamRoundedMedium, Helvetica, Verdana, sans-serif; }
+
+h6 {
+  font-size: 110%;
+  font-family: GothamRoundedMedium, Helvetica, Verdana, sans-serif; }
+
+p {
+  font-size: 100%;
+  font-family: GothamRoundedLight, Helvetica, Verdana, sans-serif;
+  line-height: 180%; }
+
+body {
+  margin: 0; }
+
+.fullscreen-background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 1s; }
+
+.fullscreen-background-video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%; }
+
+@media (max-width: 767px) {
+  .fullscreen-background {
+    background: url("../../video/Two-Swimmers.jpg") center center no-repeat; }
+  .fullscreen-background-video {
+    display: none; } }
+
+.cover-content {
+  height: 100vh;
+  text-align: center;
+  border: 1px solid transparent;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 1s; }
+  .cover-content h1 {
+    margin-top: 30vh;
+    color: white;
+    text-shadow: 1px 1px 1px #000; }
+  .cover-content h4 {
+    color: white;
+    text-shadow: 1px 1px 1px #000; }
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
