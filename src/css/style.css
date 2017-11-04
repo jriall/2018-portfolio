@@ -102,6 +102,37 @@ body {
   100% {
     opacity: 1; } }
 
+.about-me {
+  text-align: center;
+  padding: 50px 10% 50px 10%; }
+  .about-me h2 {
+    color: #525252; }
+  .about-me .diamond {
+    margin-bottom: 30px; }
+  .about-me .about-me-row {
+    display: flex; }
+    .about-me .about-me-row .about-me-column {
+      flex: 1;
+      margin-left: 20px;
+      margin-right: 20px; }
+      .about-me .about-me-row .about-me-column img {
+        width: 250px;
+        height: 250px;
+        -webkit-border-radius: 125px;
+        -moz-border-radius: 125px;
+        border-radius: 125px;
+        margin-top: 40px;
+        margin-bottom: 40px; }
+      .about-me .about-me-row .about-me-column p {
+        color: #646464; }
+
+@media (max-width: 1000px) {
+  .about-me {
+    padding-left: 5%;
+    padding-right: 5%; }
+  .about-me-row {
+    display: block !important; } }
+
 .google-maps-container {
   overflow: hidden;
   height: 400px;
@@ -177,7 +208,7 @@ body {
 .skillset {
   background-color: #F5F5F5;
   text-align: center;
-  padding: 50px 15% 50px 15%;
+  padding: 50px 10% 50px 10%;
   color: #4A4A4A; }
 
 .skillset-row {
