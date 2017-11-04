@@ -1,0 +1,22 @@
+.footer {
+  background-color: $base-color;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+  ul {
+    list-style: none;
+    padding-right: 30px;
+    li {
+      display: inline-block;
+      margin-right: 10px;
+      img {
+        height: 40px;
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+}

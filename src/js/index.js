@@ -27,13 +27,3 @@
 
   //Call Google Maps API
   google.maps.event.addDomListener(window, "load", init_map);
-
-  //Handling Google Forms submission
-  // let submitted = false;
-  //   $("#gform").on("submit", function(e) {
-  //     $("#gform *").fadeOut(2000);
-  //     $("#gform").prepend("<p>Your submission has been processed...</p>");
-  //   });
-
-
-const webApp = "https://script.google.com/macros/s/AKfycbyYUNDlejQDCXL0ZXX1F49rhcgy_gVDI3KusUVZB0kdE4CLYvk/exec";
