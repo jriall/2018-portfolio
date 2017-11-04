@@ -69,3 +69,23 @@ window.onresize = function() {
     document.getElementById("nav").classList.remove("solid-background");
   }
 };
+
+//API URL setup
+const GITHUB_URL = 'https://api.github.com/users/jriall';
+const CODEWARS_URL = 'https://www.codewars.com/api/v1/users/jriall?access_key=YFNB9R6ySYEXd1YKpEa9';
+
+//call Github API
+let githubRequest = new XMLHttpRequest();
+
+githubRequest.onreadystatechange = function() {
+      if (this.readyState === 4 && this.status === 200) {
+        let response = JSON.parse(this.responseText);
+        console.log(response);
+      }
+    }
+
+    githubRequest.open("GET", GITHUB_URL, true);
+    githubRequest.send();
+
+//call Codewars API
+

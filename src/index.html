@@ -14,21 +14,22 @@
   <!-- NavBar -->
   <nav class="nav" id="nav">
   <div class="nav-logo">
-    <a class="nav-item" href="/"> <img src="images/JR-logo.png" alt=""></a>
+    <a class="nav-item" href="#home"> <img src="images/JR-logo.png" alt=""></a>
   </div>
 
   <label for="menu-toggle" class="nav-toggle">&equiv;</label>
   <input type="checkbox" id="menu-toggle" class="is-hidden"/>
 
   <div class="nav-right nav-menu">
-    <a class="nav-item" href="">About</a>
-    <a class="nav-item" href="">Skillset</a>
-    <a class="nav-item" href="">Portfolio</a>
-    <a class="nav-item" href="">Contact</a>
+    <a class="nav-item" href="#about-me">About</a>
+    <a class="nav-item" href="#skillset">Skillset</a>
+    <a class="nav-item" href="#portfolio">Portfolio</a>
+    <a class="nav-item" href="#contact-me">Contact</a>
   </div>
 </nav>
   <!-- /NavBar -->
   <!-- HeroContent -->
+  <a class="anchor" name="home"></a>
   <div class="fullscreen-background">
     <video loop muted autoplay poster="video/Two-Swimmers.jpg" class="fullscreen-background-video" id="fullscreen-background-video">
       <source src="video/Two-Swimmers.webm" type="video/webm">
@@ -43,11 +44,14 @@
   <!-- /HeroContent -->
   <!-- AboutMe -->
   <div class="about-me">
+    <a class="anchor" name="about-me"></a>
     <h2 class="fade-position">About Me</h2>
     <hr>
     <div class="diamond"></div>
     <div class="about-me-row">
       <div class="about-me-column">
+
+
         <p>I'm James, a brand partnerships professional currently working at National Geographic. I have a passion for technology, breaking things, building things, and I am embarking on a career change to become a web developer.</p>
         <br>
         <p>I'm self-taught primarily in front-end technologies and Javascript frameworks - HTML, CSS, Javascript and React to name some of the key technologies I work with. You can find more information on my skillset as well as my portfolio projects showcasing my abilities on this page.</p>
@@ -63,6 +67,7 @@
   <!-- /AboutMe -->
   <!-- Skillset -->
   <div class="skillset">
+    <a class="anchor" name="skillset"></a>
     <h2>Skillset</h2>
     <hr>
     <div class="diamond"></div>
@@ -114,9 +119,11 @@
       </div>
     </div>
   </div>
+
   <!-- /Skillset -->
   <!-- ContactMe -->
   <div class="contact-me" id="contact-me">
+    <a class="anchor" name="contact-me"></a>
     <!-- Start new form -->
     <form class="form-horizontal" method="POST" data-email="jamesrariall@gmail.com" name="gform" id="gform" action="https://script.google.com/macros/s/AKfycbyYUNDlejQDCXL0ZXX1F49rhcgy_gVDI3KusUVZB0kdE4CLYvk/exec">
       <h3>Want to get in touch?</h3>
