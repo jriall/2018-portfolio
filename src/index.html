@@ -25,17 +25,51 @@
     <h4>Web Developer</h4>
   </div>
   </div>
-    <!-- /HeroContent -->
-    <!-- AboutMe -->
+  <!-- /HeroContent -->
+  <!-- AboutMe -->
   <div class="about-me">
     <h1>James Riall</h1>
     <h4>Web Developer</h4>
     <p>More content</p>
     <p>More content</p>
   </div>
-    <!-- /AboutMe -->
+  <!-- /AboutMe -->
+  <!-- ContactMe -->
+  <div class="contact-me" id="contact-me">
+    <h3>Want to get in touch?</h3>
+    <!-- Start new form -->
+    <form class="form-horizontal" name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSfpz7eUVESdkYRLoO2r8SyO8Mk8fCn_SkwnRSgyC6Xvkcl58A/formResponse" target="hidden_iframe" onsubmit="submitted=true;">
+      <div class="form-group">
+        <label>Name:</label>
+        <input type="text" class="form-control" placeholder="First and Last Name" name="entry.1080402746" id="entry.1080402746" required>
+      </div>
+      <div class="form-group">
+        <label>Email:</label>
+        <input type="email" class="form-control" placeholder="example@domain.com" name="entry.1783844777" id="entry.1783844777" required>
+      </div>
+      <div class="form-group">
+        <label>Subject:</label>
+        <input type="text" class="form-control" placeholder="Subject" name="entry.1028297227" id="entry.1028297227" required>
+      </div>
+      <div class="form-group">
+        <label>Message:</label>
+        <textarea class="form-control" rows="4" placeholder="Message" name="entry.1456330349" id="entry.1456330349" required></textarea>
+      </div>
+      <div class="form-group">
+        <input id="submit" name="submit" type="submit" value="SEND">
+      </div>
+    </form>
+<!--     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe> -->
+    <!-- End new form -->
+  </div>
+  <!--end of contact me-->
+  <!-- /ContactMe -->
+  <!-- GoogleMapsContainer -->
+  <div class="google-maps-container" id="google-maps-container"></div>
+  <!-- /GoogleMapsContainer -->
   <!-- Footer -->
   <!-- /Footer -->
+  <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyCjSsZogvZURGuDh1_POuEDkx61MLv0BQg'></script>
   <!--build:js js/main.min.js -->
   <script src="js/index.js"></script>
   <!-- endbuild -->
