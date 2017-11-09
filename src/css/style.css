@@ -70,9 +70,10 @@ body {
       flex-direction: row;
       padding-left: 20px; }
       .data .data-column .data-info h2 {
-        margin-bottom: -30px; }
+        margin-top: 0px;
+        margin-bottom: -10px; }
     .data .data-column img {
-      height: 100px; }
+      height: 120px; }
 
 @media (max-width: 1200px) {
   .data {
