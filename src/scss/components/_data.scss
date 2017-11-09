@@ -1,0 +1,38 @@
+.data {
+  background-color: $base-color;
+  color: white;
+  display: flex;
+  // text-align: center;
+  padding: 50px 10% 50px 10%;
+  .data-column {
+    flex: 1;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    // justify-content: center;
+    .data-info {
+      flex-direction: row;
+      padding-left: 20px;
+      h2 {
+        margin-bottom: -30px;
+      }
+    }
+    img {
+      height: 100px;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .data {
+    display: block;
+    text-align: center;
+    .data-column {
+      display: block;
+      .data-info {
+        padding-left: 0;
+      }
+    }
+  }
+}

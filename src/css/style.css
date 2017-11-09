@@ -55,6 +55,34 @@ p {
 body {
   margin: 0; }
 
+.data {
+  background-color: #6fbd8d;
+  color: white;
+  display: flex;
+  padding: 50px 10% 50px 10%; }
+  .data .data-column {
+    flex: 1;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    align-items: center; }
+    .data .data-column .data-info {
+      flex-direction: row;
+      padding-left: 20px; }
+      .data .data-column .data-info h2 {
+        margin-bottom: -30px; }
+    .data .data-column img {
+      height: 100px; }
+
+@media (max-width: 1200px) {
+  .data {
+    display: block;
+    text-align: center; }
+    .data .data-column {
+      display: block; }
+      .data .data-column .data-info {
+        padding-left: 0; } }
+
 .nav {
   display: flex;
   align-items: stretch;
