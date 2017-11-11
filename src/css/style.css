@@ -251,6 +251,14 @@ body {
   .about-me-row {
     display: block !important; } }
 
+.projects {
+  text-align: center;
+  padding: 50px 10% 50px 10%; }
+  .projects h2 {
+    color: #525252; }
+  .projects .diamond {
+    margin-bottom: 30px; }
+
 .google-maps-container {
   overflow: hidden;
   height: 400px;
