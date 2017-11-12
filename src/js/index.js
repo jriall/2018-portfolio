@@ -1,3 +1,6 @@
+//variable setup for hiding and revealing projects
+let projectsHidden = true;
+
 //Cover video pauses after 20 seconds to save using CPU excessively
 const video = document.getElementById("fullscreen-background-video");
 
@@ -70,22 +73,42 @@ window.onresize = function() {
   }
 };
 
+//Handle show and hide of projects
+document.getElementById("project-reveal-button").onclick = function() {
+  const projectList = document.getElementsByClassName("project-toggle");
+  const projectRevealButton = document.getElementById("project-reveal-button")
+    .firstChild;
+  if (projectsHidden) {
+    for (let i = 0; i < projectList.length; i++) {
+      projectList[i].classList.remove("project-hidden");
+    }
+    projectsHidden = false;
+    projectRevealButton.data = "Show Less";
+  } else {
+    for (let i = 0; i < projectList.length; i++) {
+      projectList[i].classList.add("project-hidden");
+    }
+    projectsHidden = true;
+    projectRevealButton.data = "Show More";
+  }
+};
+
 //API URL setup
-const GITHUB_URL = 'https://api.github.com/users/jriall';
-const CODEWARS_URL = 'https://www.codewars.com/api/v1/users/jriall?access_key=YFNB9R6ySYEXd1YKpEa9';
+const GITHUB_URL = "https://api.github.com/users/jriall";
+const CODEWARS_URL =
+  "https://www.codewars.com/api/v1/users/jriall?access_key=YFNB9R6ySYEXd1YKpEa9";
 
 //call Github API
 let githubRequest = new XMLHttpRequest();
 
 githubRequest.onreadystatechange = function() {
-      if (this.readyState === 4 && this.status === 200) {
-        let response = JSON.parse(this.responseText);
-        console.log(response);
-      }
-    }
+  if (this.readyState === 4 && this.status === 200) {
+    let response = JSON.parse(this.responseText);
+    console.log(response);
+  }
+};
 
-    githubRequest.open("GET", GITHUB_URL, true);
-    githubRequest.send();
+githubRequest.open("GET", GITHUB_URL, true);
+githubRequest.send();
 
 //call Codewars API
-
