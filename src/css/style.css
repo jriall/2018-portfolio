@@ -263,6 +263,26 @@ body {
     color: #525252; }
   .projects .diamond {
     margin-bottom: 30px; }
+  .projects .project-images .project-reveal-button {
+    font-family: GothamRoundedMedium, Helvetica, Verdana, sans-serif;
+    margin-top: 20px;
+    font-size: 120%;
+    padding: 10px 15px 10px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+    border: 2px solid #6fbd8d;
+    background-color: #6fbd8d;
+    font-weight: bold;
+    color: white; }
+    .projects .project-images .project-reveal-button:hover {
+      background-color: white;
+      text-decoration: none;
+      color: #6fbd8d; }
+    .projects .project-images .project-reveal-button:active {
+      text-decoration: none; }
+    .projects .project-images .project-reveal-button:focus {
+      text-decoration: none;
+      outline: none; }
   .projects .project-images ul {
     cursor: pointer;
     list-style: none;

@@ -83,13 +83,13 @@ document.getElementById("project-reveal-button").onclick = function() {
       projectList[i].classList.remove("project-hidden");
     }
     projectsHidden = false;
-    projectRevealButton.data = "Show Less";
+    projectRevealButton.data = "SHOW LESS";
   } else {
     for (let i = 0; i < projectList.length; i++) {
       projectList[i].classList.add("project-hidden");
     }
     projectsHidden = true;
-    projectRevealButton.data = "Show More";
+    projectRevealButton.data = "SHOW MORE";
   }
 };
 
