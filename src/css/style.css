@@ -56,7 +56,7 @@ body {
   margin: 0; }
 
 .data {
-  background-color: #6fbd8d;
+  background-image: linear-gradient(to right, #6fbd8d 0%, #00b09b 100%);
   color: white;
   display: flex;
   padding: 50px 10% 50px 10%; }
@@ -69,11 +69,10 @@ body {
     .data .data-column .data-info {
       flex-direction: row;
       padding-left: 20px; }
-      .data .data-column .data-info h2 {
-        margin-top: 0px;
-        margin-bottom: -10px; }
+      .data .data-column .data-info h3 {
+        margin-bottom: -20px; }
     .data .data-column img {
-      height: 120px; }
+      height: 80px; }
 
 @media (max-width: 1200px) {
   .data {
@@ -90,6 +89,7 @@ body {
   background-color: rgba(111, 189, 141, 0);
   min-height: 60px;
   position: fixed;
+  z-index: 9999;
   width: 100%; }
 
 .shadow {
@@ -263,6 +263,40 @@ body {
     color: #525252; }
   .projects .diamond {
     margin-bottom: 30px; }
+  .projects .project-images ul {
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .projects .project-images ul .project-image {
+      background-color: #F5F5F5;
+      padding: 20px;
+      width: 25%;
+      min-width: 300px;
+      margin: 10px;
+      position: relative; }
+      .projects .project-images ul .project-image:hover .project-overlay {
+        opacity: 1;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(123, 123, 123, 0.8); }
+      .projects .project-images ul .project-image h4 {
+        margin-bottom: 5px; }
+      .projects .project-images ul .project-image img {
+        width: 100%; }
+      .projects .project-images ul .project-image .project-overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease; }
+        .projects .project-images ul .project-image .project-overlay h4 {
+          color: white; }
 
 .google-maps-container {
   overflow: hidden;
@@ -272,7 +306,7 @@ body {
 .contact-me {
   padding-top: 20px;
   color: #ffffff;
-  background-color: #6fbd8d;
+  background-image: linear-gradient(to right, #6fbd8d 0%, #00b09b 100%);
   text-align: center;
   padding-bottom: 20px; }
   .contact-me #thankyou_message {
@@ -286,20 +320,22 @@ body {
   .contact-me h3 {
     padding-bottom: 10px; }
   .contact-me .form-group label,
-  .contact-me .form-group input, .contact-me .form-group textarea {
+  .contact-me .form-group input,
+  .contact-me .form-group textarea {
     display: block;
     margin: 0 auto; }
   .contact-me .form-group label {
     font-size: 130%;
     font-family: GothamRoundedMedium, Helvetica, Verdana, sans-serif;
     padding: 10px; }
-  .contact-me .form-group input, .contact-me .form-group textarea {
+  .contact-me .form-group input,
+  .contact-me .form-group textarea {
     width: 100%;
     max-width: 400px;
     font-size: 110%; }
   .contact-me #submit {
     font-family: GothamRoundedMedium, Helvetica, Verdana, sans-serif;
-    background-color: #6fbd8d;
+    background-color: transparent;
     width: 100px;
     color: white;
     padding: 5px 15px 5px 15px;
@@ -309,7 +345,7 @@ body {
     border-radius: 3px;
     cursor: pointer; }
     .contact-me #submit:hover {
-      color: #6fbd8d;
+      color: #47B695;
       background-color: white;
       text-decoration: none; }
     .contact-me #submit:active {
@@ -319,7 +355,7 @@ body {
       outline: none; }
 
 .footer {
-  background-color: #6fbd8d;
+  background-image: linear-gradient(to right, #6fbd8d 0%, #00b09b 100%);
   display: flex;
   justify-content: center;
   align-items: center;

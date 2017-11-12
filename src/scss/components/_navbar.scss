@@ -4,6 +4,7 @@
   background-color: rgba(111, 189, 141, 0);
   min-height: 60px;
   position: fixed;
+  z-index: 9999;
   width: 100%;
 }
 
@@ -20,7 +21,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  #menu-toggle:checked + .nav-menu {
+  #menu-toggle:checked+.nav-menu {
     display: block;
     background-color: $base-color;
   }
@@ -87,8 +88,8 @@
   justify-content: flex-end;
   .nav-item {
     &:hover {
-    border-bottom: 5px solid white;
-  }
+      border-bottom: 5px solid white;
+    }
   }
 }
 

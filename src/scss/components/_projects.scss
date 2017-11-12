@@ -7,4 +7,47 @@
   .diamond {
     margin-bottom: 30px;
   }
+  .project-images {
+    ul {
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      .project-image {
+        background-color: $gray-bg;
+        padding: 20px;
+        width: 25%;
+        min-width: 300px;
+        margin: 10px;
+        position: relative;
+        &:hover .project-overlay {
+          opacity: 1;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(123, 123, 123, 0.8);
+        }
+        h4 {
+          margin-bottom: 5px;
+        }
+        img {
+          width: 100%;
+        }
+        .project-overlay {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          height: 100%;
+          width: 100%;
+          opacity: 0;
+          transition: .5s ease;
+          h4 {
+            color: white;
+          }
+        }
+      }
+    }
+  }
 }
