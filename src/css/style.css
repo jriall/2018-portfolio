@@ -1,3 +1,40 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
 @font-face {
   font-family: 'GothamRoundedBold';
   src: url("../fonts/gotham_rounded/GothamRoundedBold_21016.ttf"); }
@@ -75,7 +112,7 @@ ul {
       flex-direction: row;
       padding-left: 20px; }
       .data .data-column .data-info h3 {
-        margin-bottom: -20px; }
+        margin-bottom: 0px; }
     .data .data-column img {
       height: 80px; }
 
@@ -86,7 +123,8 @@ ul {
     .data .data-column {
       display: block; }
       .data .data-column .data-info {
-        padding-left: 0; } }
+        padding-left: 0;
+        margin-bottom: 20px; } }
 
 .nav {
   display: flex;
@@ -270,6 +308,8 @@ ul {
     color: #525252; }
   .projects .diamond {
     margin-bottom: 30px; }
+  .projects p {
+    margin-bottom: 30px; }
   .projects .project-images .project-reveal-button {
     font-family: GothamRoundedMedium, Helvetica, Verdana, sans-serif;
     margin-top: 20px;
@@ -312,7 +352,7 @@ ul {
         height: 100%;
         background-color: rgba(123, 123, 123, 0.8); }
       .projects .project-images ul .project-image h4 {
-        margin-bottom: 5px; }
+        margin: 15px 0 5px 0; }
       .projects .project-images ul .project-image img {
         width: 100%; }
       .projects .project-images ul .project-image .project-overlay {
