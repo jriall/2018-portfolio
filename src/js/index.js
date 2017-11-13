@@ -44,7 +44,6 @@ window.addEventListener("scroll", function() {
     document.documentElement.clientWidth,
     window.innerWidth || 0
   );
-
   //changing the transparency
   if (windowWidth > 768) {
     document.getElementById(
