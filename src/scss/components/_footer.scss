@@ -7,10 +7,9 @@
   height: 70px;
   ul {
     list-style: none;
-    padding-right: 30px;
     li {
       display: inline-block;
-      margin-right: 10px;
+      margin: 0 5px 0 5px;
       img {
         height: 35px;
         &:hover {

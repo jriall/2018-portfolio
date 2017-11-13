@@ -45,6 +45,9 @@
         min-width: 300px;
         margin: 10px;
         position: relative;
+        @media (max-width: 768px) {
+          min-width: 250px;
+        }
         &:hover .project-overlay {
           opacity: 1;
           width: 100%;
@@ -79,3 +82,4 @@
 .project-hidden {
   display:none;
 }
+
