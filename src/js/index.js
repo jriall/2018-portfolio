@@ -103,7 +103,6 @@ let githubRequest = new XMLHttpRequest();
 githubRequest.onreadystatechange = function() {
   if (this.readyState === 4 && this.status === 200) {
     let response = JSON.parse(this.responseText);
-    console.log(response);
   }
 };
 
