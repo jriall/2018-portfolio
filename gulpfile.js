@@ -2,10 +2,9 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var browserSync = require('browser-sync').create();
 var useref = require('gulp-useref');
-var uglify = require('gulp-uglify');
+var uglify = require('gulp-uglify-es').default;
 var gulpIf = require('gulp-if');
 var uglifycss = require('gulp-uglifycss');
-var gzip = require('gulp-gzip');
 var newer = require('gulp-newer');
 var imagemin = require('gulp-imagemin');
 var cache = require('gulp-cache');
@@ -45,7 +44,6 @@ gulp.task('useref', function(){
       "maxLineLen": 80,
       "uglyComments": true
     })))
-    .pipe(gzip())
     .pipe(gulp.dest('dist'));
 });
 
@@ -54,6 +52,12 @@ gulp.task('images', function(){
   .pipe(newer('dist/images'))
   .pipe(imagemin({ optimizationLevel: 5 }))
   .pipe(gulp.dest('dist/images'));
+});
+
+gulp.task('videos', function(){
+  return gulp.src('src/video/**/*')
+  .pipe(newer('dist/video'))
+  .pipe(gulp.dest('dist/video'));
 });
 
 gulp.task('fonts', function() {
@@ -71,7 +75,7 @@ return cache.clearAll(callback);
 
 gulp.task('build', function (callback) {
   runSequence('clean:dist',
-    ['sass', 'useref', 'images', 'fonts'],
+    ['sass', 'useref', 'images', 'videos', 'fonts'],
     callback
   );
 });

@@ -57,7 +57,7 @@ table {
 
 @font-face {
   font-family: 'AdamCGPro';
-  src: url("../../fonts/ADAM.CG-PRO/ADAM.CG-PRO.otf"); }
+  src: url("../fonts/ADAM.CG-PRO/ADAM.CG-PRO.otf"); }
 
 h1 {
   font-size: 400%;
@@ -244,7 +244,7 @@ ul {
 
 @media (max-width: 767px) {
   .fullscreen-background {
-    background: url("../../video/Two-Swimmers.jpg") center center no-repeat; }
+    background: url("../video/Two-Swimmers.jpg") center center no-repeat; }
   .fullscreen-background-video {
     display: none; } }
 
