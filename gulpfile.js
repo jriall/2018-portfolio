@@ -73,9 +73,14 @@ gulp.task('cache:clear', function (callback) {
 return cache.clearAll(callback);
 });
 
+gulp.task('cname', function() {
+  gulp.src(['CNAME'])
+    .pipe(gulp.dest('dist'));
+})
+
 gulp.task('build', function (callback) {
   runSequence('clean:dist',
-    ['sass', 'useref', 'images', 'videos', 'fonts'],
+    ['sass', 'useref', 'images', 'videos', 'fonts', 'cname'],
     callback
   );
 });
