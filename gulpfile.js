@@ -44,29 +44,29 @@ gulp.task('useref', function(){
       "maxLineLen": 80,
       "uglyComments": true
     })))
-    .pipe(gulp.dest('dist'));
+    .pipe(gulp.dest('docs'));
 });
 
 gulp.task('images', function(){
   return gulp.src('src/images/**/*.+(png|jpg|jpeg|gif|svg)')
-  .pipe(newer('dist/images'))
+  .pipe(newer('docs/images'))
   .pipe(imagemin({ optimizationLevel: 5 }))
-  .pipe(gulp.dest('dist/images'));
+  .pipe(gulp.dest('docs/images'));
 });
 
 gulp.task('videos', function(){
   return gulp.src('src/video/**/*')
-  .pipe(newer('dist/video'))
-  .pipe(gulp.dest('dist/video'));
+  .pipe(newer('docs/video'))
+  .pipe(gulp.dest('docs/video'));
 });
 
 gulp.task('fonts', function() {
   return gulp.src('src/fonts/**/*')
-  .pipe(gulp.dest('dist/fonts'));
+  .pipe(gulp.dest('docs/fonts'));
 });
 
 gulp.task('clean:dist', function() {
-  return del.sync('dist');
+  return del.sync('docs');
 });
 
 gulp.task('cache:clear', function (callback) {
@@ -74,8 +74,8 @@ return cache.clearAll(callback);
 });
 
 gulp.task('cname', function() {
-  gulp.src(['CNAME'])
-    .pipe(gulp.dest('dist'));
+  return gulp.src(['src/CNAME'])
+    .pipe(gulp.dest('docs'));
 })
 
 gulp.task('build', function (callback) {
@@ -92,6 +92,6 @@ gulp.task('default', function (callback) {
 });
 
 gulp.task('deploy', function () {
-  return gulp.src("./dist/**/*")
+  return gulp.src("./docs/**/*")
     .pipe(deploy())
 });

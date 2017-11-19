@@ -1,0 +1,77 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after{content:'';content:none}
+q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+@font-face{font-family:'GothamRoundedBold';src:url("../fonts/gotham_rounded/GothamRoundedBold_21016.ttf")}
+@font-face{font-family:'GothamRoundedLight';src:url("../fonts/gotham_rounded/GothamRoundedLight_21020.ttf")}
+@font-face{font-family:'GothamRoundedMedium';src:url("../fonts/gotham_rounded/GothamRoundedMedium_21022.ttf")}
+@font-face{font-family:'GothamRoundedLightItalic';src:url("../fonts/gotham_rounded/GothamRounded-LightItalic.otf")}
+@font-face{font-family:'GothamRoundedMediumItalic';src:url("../fonts/gotham_rounded/GothamRounded-MediumItalic.otf")}
+@font-face{font-family:'AdamCGPro';src:url("../fonts/ADAM.CG-PRO/ADAM.CG-PRO.otf")}
+h1{font-size:400%;font-family:AdamCGPro,Helvetica,Verdana,sans-serif}h2{font-size:250%;font-family:GothamRoundedMedium,Helvetica,Verdana,sans-serif}
+h3{font-size:200%;font-family:GothamRoundedMedium,Helvetica,Verdana,sans-serif;margin-bottom:20px}
+h4{font-size:150%;font-family:GothamRoundedMedium,Helvetica,Verdana,sans-serif}h5{font-size:125%;font-family:GothamRoundedMedium,Helvetica,Verdana,sans-serif}
+h6{font-size:110%;font-family:GothamRoundedMedium,Helvetica,Verdana,sans-serif}p{font-size:100%;font-family:GothamRoundedLight,Helvetica,Verdana,sans-serif;line-height:180%}
+body{margin:0;padding:0;border:0}ul{-webkit-padding-start:0}.data{background-image:linear-gradient(to right,#6fbd8d 0,#00b09b 100%);color:white;display:flex;padding:50px 10% 50px 10%}
+.data .data-column{flex:1;margin-left:20px;margin-right:20px;display:flex;align-items:center}
+.data .data-column .data-info{flex-direction:row;padding-left:20px}.data .data-column .data-info h3{margin-bottom:0}
+.data .data-column img{height:80px}@media(max-width:1200px){.data{display:block;text-align:center}
+.data .data-column{display:block}.data .data-column .data-info{padding-left:0;margin-bottom:20px}
+}.nav{display:flex;align-items:stretch;background-color:rgba(111,189,141,0);position:fixed;z-index:9999;width:100%}
+.shadow{box-shadow:0 1px 1px #fff}.solid-background{background-color:#6fbd8d}.is-hidden{display:none}
+@media screen and (max-width:768px){#menu-toggle:checked+.nav-menu{display:block;background-color:#6fbd8d}
+.nav{background-color:#6fbd8d}}.nav-toggle{margin-right:5%;font-size:60px;align-items:center;display:flex;color:#e6e6e6}
+@media(min-width:768px){.nav-toggle{display:none}}.nav-toggle:hover{cursor:pointer;color:white}
+.nav-item{align-items:center;display:flex;padding:.25rem .5rem;font-family:GothamRoundedMedium,Helvetica,Verdana,sans-serif;font-size:140%;color:#f2f2f2;border-bottom:5px solid transparent}
+.nav-item:hover{color:white}.nav-item:link,.nav-item:visited,.nav-item:hover,.nav-item:active{text-decoration:inherit;font-weight:inherit}
+.nav-logo,.nav-right{align-items:stretch;display:flex;flex-wrap:wrap;flex-grow:1}
+.nav-logo{justify-content:flex-start;margin-left:5%}.nav-logo .nav-item img{height:70px}
+@media(max-width:768px){.nav-logo .nav-item img{height:50px}}.nav-right{justify-content:flex-end}
+.nav-right .nav-item:hover{border-bottom:5px solid white}.nav-menu{margin-right:5%}
+@media(max-width:768px){.nav-menu.nav-right{width:100%;display:none;left:0;right:0;top:100%;position:absolute;background-color:white;box-shadow:0 4px 7px rgba(10,10,10,0.1)}
+.nav-menu.nav-right .nav-item{border-top:1px solid #a3d5b7;border-bottom:5px solid #6fbd8d;padding:15px 0 15px 7%;color:white}
+.nav-menu.nav-right .nav-item:hover{background:#80c59b;border-bottom:5px solid white}
+}.fullscreen-background{position:absolute;top:0;right:0;bottom:0;left:0;overflow:hidden;z-index:-100;opacity:1;animation-name:fadeInOpacity;animation-iteration-count:1;animation-timing-function:ease-in;animation-duration:1s}
+.fullscreen-background-video{object-fit:cover;width:100%;height:100%}@media(max-width:767px){.fullscreen-background{background:url("../video/Two-Swimmers.jpg") center center no-repeat}
+.fullscreen-background-video{display:none}}.cover-content{height:100vh;text-align:center;border:1px solid transparent;animation-name:fadeInOpacity;animation-iteration-count:1;animation-timing-function:ease-in;animation-duration:1s}
+.cover-content h1{margin-top:30vh;color:white;text-shadow:1px 1px 1px #000}.cover-content h4{color:white;text-shadow:1px 1px 1px #000}
+@keyframes fadeInOpacity{0%{opacity:0}100%{opacity:1}}.about-me{text-align:center;padding:50px 10% 50px 10%}
+.about-me h2{color:#525252}.about-me .diamond{margin-bottom:30px}.about-me .about-me-row{display:flex}
+.about-me .about-me-row .about-me-column{flex:1;margin-left:20px;margin-right:20px}
+.about-me .about-me-row .about-me-column img{width:250px;height:250px;-webkit-border-radius:125px;-moz-border-radius:125px;border-radius:125px;margin-top:40px;margin-bottom:40px}
+.about-me .about-me-row .about-me-column p{color:#646464}@media(max-width:1000px){.about-me{padding-left:5%;padding-right:5%}
+.about-me-row{display:block !important}}.projects{text-align:center;padding:50px 10% 50px 10%}
+.projects h2{color:#525252}.projects .diamond{margin-bottom:30px}.projects p{margin-bottom:30px}
+.projects .project-images .project-reveal-button{font-family:GothamRoundedMedium,Helvetica,Verdana,sans-serif;margin-top:20px;font-size:120%;padding:10px 15px 10px 15px;border-radius:3px;cursor:pointer;border:2px solid #6fbd8d;background-color:#6fbd8d;font-weight:bold;color:white}
+.projects .project-images .project-reveal-button:hover{background-color:white;text-decoration:none;color:#6fbd8d}
+.projects .project-images .project-reveal-button:active{text-decoration:none}.projects .project-images .project-reveal-button:focus{text-decoration:none;outline:0}
+.projects .project-images ul{cursor:pointer;list-style:none;display:flex;flex-wrap:wrap;justify-content:center}
+.projects .project-images ul .project-image{background-color:#f5f5f5;padding:20px;width:25%;min-width:300px;margin:10px;position:relative}
+@media(max-width:768px){.projects .project-images ul .project-image{min-width:250px}
+}.projects .project-images ul .project-image:hover .project-overlay{opacity:1;width:100%;height:100%;background-color:rgba(123,123,123,0.8)}
+.projects .project-images ul .project-image h4{margin:15px 0 5px 0}.projects .project-images ul .project-image img{width:100%}
+.projects .project-images ul .project-image .project-overlay{position:absolute;top:0;bottom:0;left:0;right:0;height:100%;width:100%;opacity:0;transition:.5s ease}
+.projects .project-images ul .project-image .project-overlay h4{color:white}.projects .project-images ul .project-image .project-overlay p{color:white;padding:10px}
+.projects .project-images ul .project-image .project-overlay .project-github-button,.projects .project-images ul .project-image .project-overlay .project-site-button{font-family:GothamRoundedMedium,Helvetica,Verdana,sans-serif;font-size:80%;color:white;background-color:transparent;padding:10px;border-radius:3px;border:2px solid white;margin:10px;cursor:pointer}
+.projects .project-images ul .project-image .project-overlay .project-github-button:hover,.projects .project-images ul .project-image .project-overlay .project-site-button:hover{background-color:white;text-decoration:none;color:rgba(0,0,0,0.4)}
+.projects .project-images ul .project-image .project-overlay .project-github-button:active,.projects .project-images ul .project-image .project-overlay .project-site-button:active{text-decoration:none}
+.projects .project-images ul .project-image .project-overlay .project-github-button:focus,.projects .project-images ul .project-image .project-overlay .project-site-button:focus{text-decoration:none;outline:0}
+.projects .project-images ul .project-image .project-overlay .project-github-button a,.projects .project-images ul .project-image .project-overlay .project-github-button a:link,.projects .project-images ul .project-image .project-overlay .project-github-button a:visited,.projects .project-images ul .project-image .project-overlay .project-github-button a:hover,.projects .project-images ul .project-image .project-overlay .project-github-button a:active,.projects .project-images ul .project-image .project-overlay .project-site-button a,.projects .project-images ul .project-image .project-overlay .project-site-button a:link,.projects .project-images ul .project-image .project-overlay .project-site-button a:visited,.projects .project-images ul .project-image .project-overlay .project-site-button a:hover,.projects .project-images ul .project-image .project-overlay .project-site-button a:active{color:inherit;text-decoration:inherit;font-weight:inherit}
+.project-hidden{display:none}.google-maps-container{overflow:hidden;height:400px;width:100%}
+.contact-me{padding-top:20px;color:#fff;background-image:linear-gradient(to right,#6fbd8d 0,#00b09b 100%);text-align:center;padding-bottom:20px}
+.contact-me #thankyou_message{width:80%;margin-left:10%}.contact-me .form-horizontal{width:50%;margin-left:25%;text-align:center;padding-bottom:20px}
+.contact-me h3{padding-bottom:10px}.contact-me .form-group label,.contact-me .form-group input,.contact-me .form-group textarea{display:block;margin:0 auto}
+.contact-me .form-group label{font-size:130%;font-family:GothamRoundedMedium,Helvetica,Verdana,sans-serif;padding:10px}
+.contact-me .form-group input,.contact-me .form-group textarea{width:100%;max-width:400px;font-size:110%}
+.contact-me #submit{font-family:GothamRoundedMedium,Helvetica,Verdana,sans-serif;background-color:transparent;width:100px;color:white;padding:5px 15px 5px 15px;margin-top:20px;border:2px solid white;font-size:120%;border-radius:3px;cursor:pointer}
+.contact-me #submit:hover{color:#47b695;background-color:white;text-decoration:none}
+.contact-me #submit:active{text-decoration:none}.contact-me #submit:focus{text-decoration:none;outline:0}
+.footer{background-image:linear-gradient(to right,#6fbd8d 0,#00b09b 100%);display:flex;justify-content:center;align-items:center;width:100%;height:70px}
+.footer ul{list-style:none}.footer ul li{display:inline-block;margin:0 5px 0 5px}
+.footer ul li img{height:35px}.footer ul li img:hover{opacity:.8}.skillset{background-color:#f5f5f5;text-align:center;padding:50px 10% 50px 10%;color:#4a4a4a}
+.skillset-row{display:flex}.skillset-row .skillset-column{flex:1;margin-left:20px;margin-right:20px}
+.skillset-row .skillset-column img{height:100px;margin-top:30px}.skillset-row .skillset-column h3{margin-bottom:30px}
+.skillset-row .skillset-column .skillset-body p{color:#626262}@media(max-width:1000px){.skillset{padding-left:5%;padding-right:5%}
+.skillset-row{display:block}}hr{height:2px;border:0;width:40%;background-image:linear-gradient(to right,rgba(111,189,141,0),rgba(111,189,141,0.75),rgba(111,189,141,0));margin-top:30px}
+.diamond{margin-right:auto;margin-left:auto;margin-bottom:10px;width:10px;height:10px;position:relative;bottom:14px;background:#6fbd8d;-ms-transform:rotate(45deg);-webkit-transform:rotate(45deg);transform:rotate(45deg)}
+a.anchor{display:block;position:relative;top:-100px;visibility:hidden}
