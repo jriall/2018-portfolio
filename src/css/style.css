@@ -257,7 +257,7 @@ ul {
   .cover-content h4 {
     color: white;
     text-shadow: 1px 1px 1px #000; }
-  .cover-content #down-arrow {
+  .cover-content .down-arrow {
     width: 100px;
     margin-top: 300px;
     cursor: pointer; }
